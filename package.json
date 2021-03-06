@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/feMoraes0/nodejs-udemy/issues"
   },
-  "homepage": "https://github.com/feMoraes0/nodejs-udemy#readme"
+  "homepage": "https://github.com/feMoraes0/nodejs-udemy#readme",
+  "devDependencies": {
+    "git-commit-msg-linter": "^3.0.0"
+  }
 }
