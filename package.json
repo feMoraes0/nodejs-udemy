@@ -7,6 +7,9 @@
     "test": "jest",
     "test:staged": "jest"
   },
+  "hooks": {
+    "pre-commit": "lint-staged"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/feMoraes0/nodejs-udemy.git"
