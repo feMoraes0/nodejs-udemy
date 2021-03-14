@@ -12,6 +12,12 @@
     "test:ci": "npm test -- --coverage",
     "prepare": "husky install"
   },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run test:ci",
+      "pre-commit": "npm run test:staged"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/feMoraes0/nodejs-udemy.git"
