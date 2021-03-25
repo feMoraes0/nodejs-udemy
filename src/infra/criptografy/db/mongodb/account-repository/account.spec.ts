@@ -1,8 +1,9 @@
 import { MongoHelper } from '../helpers/mongo-helper'
+import { AccountMongoRepository } from './account'
 
 describe('Account Mongo Repository', () => {
   beforeAll(async () => {
-    await MongoHelper.connect('mongodb://127.0.0.1:42075/jest?')
+    await MongoHelper.connect(process.env.MONGO_URL as string)
   })
 
   afterAll(async () => {
